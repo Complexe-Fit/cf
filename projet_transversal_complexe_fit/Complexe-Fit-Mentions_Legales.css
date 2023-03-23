@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&family=Hanken+Grotesk:wght@800;900&family=Roboto+Condensed:wght@300&family=Roboto:wght@900&display=swap');
+:root {
+    --highlight: #19b952;
+}
+* {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background: #333;
+  }
+body {
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.image {
+    position: relative;
+    z-index: 100;
+    margin-top: -196px;
+    display: block;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 400px;
+}
+.cercle {
+    position: static;
+    background: #ffffff;
+    width: 370px;
+    height: 210px;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    transform: rotate(180deg);
+    margin-top: -205px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+}
+.navbar {
+    position: static;
+    background: #ffffff;
+    width: 80%;
+    margin: auto;
+    padding: 50px 10px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+.list-item {
+    font-size: 40px;
+    list-style-type: none;
+    flex-basis: 100%;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #555;
+    transform: translateY(0);
+    transition: transform 0.5s ease, opacity 0.2s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+.list-item-name {
+    font-size: 20px;
+    margin-top: 50px;
+    font-weight: 500px;
+    position: absolute;
+    transform: translate(0, 50px);
+    transition: transform 0.5s ease, opacity 0.2s ease;
+    opacity: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.list-item:hover {
+    color: var(--highlight);
+    transform: translateY(-6px);
+}
+.list-item:hover .list-item-name {
+    transform: translateY(20px);
+    opacity: 1;
+}
+@media screen and (max-width: 1080px) {
+    .navbar {
+        flex-direction: row;
+        align-items: center;
+        max-width: 100%;
+        padding-bottom: 55px;
+    }
+
+
+    .image {
+        width: 220px;
+        height: 220px;
+    }
+    .cercle {
+        width: 220px;
+        height: 220px;
+    }
+    .list-item {
+        flex-basis: auto;
+    }
+    .list-item:hover .list-item-name{
+        transform: translateY(25px);
+    }
+}
+
+
+
+
+
+
+.fond {
+    background: white;
+    width: 80%;
+    margin: auto;
+    padding: 50px 10px;
+    border-radius: 40px;
+    justify-content: space-around;
+}
+.texte-description {
+    text-align: justify;
+    font-size: 150%;
+    color: #555;
+    z-index: 40;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.titre {
+    margin-left: 5%;
+    text-transform: uppercase;
+    font-size: 250%;
+    color: #19b952;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+p {
+    font-size: 50px;
+    color: #555;
+}
+
+.foot {
+    position: static;
+    background: #ffffff;
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+    border-radius: 40px 40px 0px 0px;
+
+}
+
+.topnav-right {
+    position: relative;
+    float: right;
+}
+  
+.topnav-right a {
+    color: #555;
+    text-decoration: none;
+    font-size: 20px;
+    float: right;
+    margin-right: 50px;
+    transition: .2s;
+}
+
+.topnav-right:hover a {
+    color: #19b952;
+    text-decoration: none;
+    font-size: 20px;
+    float: right;
+    margin-right: 50px;
+}
+
+
+
+.topnav-left-1 {
+    position: relative;
+    overflow: hidden; 
+    display: inline;
+}
+
+.topnav-left-1 a {
+    color: #555;
+    text-decoration: none;
+    font-size: 17px;
+    margin-left: 50px;
+    margin-top: -20px;
+}
+
+
+.topnav-left-2 {
+    position: relative;
+    overflow: hidden; 
+    display: inline;
+}
+  
+.topnav-left-2 a {
+    color: #19b952;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: -20px;
+    text-transform: uppercase;
+    margin-left: 0;
+}
